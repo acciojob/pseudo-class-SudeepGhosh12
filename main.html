@@ -3,11 +3,38 @@
 <html>
 
 <head>
+	    <style>
+        #container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #000;
+            text-align: center;
+            position: relative;
+        }
+        #container::before {
+            content: "★ Special Text Before ★";
+            display: block;
+            color: #f00;
+            font-size: 20px;
+            text-align: center;
+        }
+        #container::after {
+            content: "★ Special Text After ★";
+            display: block;
+            color: #f00;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+    
+    <div id="container">
+        Main Container Content
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
